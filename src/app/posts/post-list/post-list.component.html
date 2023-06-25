@@ -1,0 +1,6 @@
+<h2>Lista de publicaciones</h2>
+<ul>
+  <li *ngFor="let post of posts" (click)="showPostDetails(post.id)">
+    {{ post.title }}
+  </li>
+</ul>
